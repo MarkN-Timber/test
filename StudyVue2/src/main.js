@@ -1,13 +1,14 @@
-// filepath: /c:/Users/MarkN/develop/test/StudyVue/src/main.ts
+import './assets/main.css'
+
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
 import { createVuetify } from 'vuetify'
 import 'vuetify/styles'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
+// Vuetifyのインスタンスを作成
 const vuetify = createVuetify({
   components,
   directives,
@@ -20,7 +21,9 @@ const vuetify = createVuetify({
   },
 })
 
-createApp(App)
-  .use(router)
-  .use(vuetify)
-  .mount('#app')
+const app = createApp(App)
+
+// Vuetifyをアプリケーションに追加
+app.use(vuetify)
+
+app.mount('#app')
