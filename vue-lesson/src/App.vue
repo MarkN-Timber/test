@@ -1,9 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import ShowCount from './components/ShowCount.vue'
 const count = ref(0)
 </script>
 <template>
-  <p>{{ count }}</p>
-  <button v-on:click="count++">button</button>
+  <h1>Counter App</h1>
+  <ShowCount :foo="count" bar="hello" />
+  <button @click="count++">button</button>
 </template>
-<style></style>
