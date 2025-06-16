@@ -11,7 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -19,6 +20,7 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/test-utils": "^2.4.0-alpha.2",
     "babel-jest": "^26.6.3",
+    "cypress": "^14.4.1",
     "eslint": "^9.22.0",
     "eslint-plugin-vue": "~10.0.0",
     "globals": "^16.0.0",

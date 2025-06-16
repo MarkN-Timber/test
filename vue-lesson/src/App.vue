@@ -1,10 +1,5 @@
-<script setup>
-import { ref } from 'vue'
-import ShowCount from './components/ShowCount.vue'
-const count = ref(0)
-</script>
+<script setup></script>
 <template>
-  <h1>Counter App</h1>
-  <ShowCount :foo="count" bar="hello" />
-  <button @click="count++">button</button>
+  <h1>Vue Router</h1>
+  <RoutrerView />
 </template>
